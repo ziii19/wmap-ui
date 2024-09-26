@@ -5,6 +5,7 @@ import 'package:wpay/widgets/icon_wrap.dart';
 
 import '../../utils/theme/app_color.dart';
 import '../../widgets/custom_app_bar.dart';
+import '../../widgets/line_gradient.dart';
 
 part 'section/main_menu_section.dart';
 part 'section/discount.dart';

@@ -36,21 +36,8 @@ class _MainMenu extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 13),
-            width: .5,
-            height: double.maxFinite,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppColor.white.withOpacity(0),
-                  AppColor.white,
-                  AppColor.white.withOpacity(0),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-            ),
+          const LineGradient(
+            color: AppColor.white,
           ),
           Expanded(
             child: SizedBox(
@@ -74,21 +61,8 @@ class _MainMenu extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 13),
-            width: .5,
-            height: double.maxFinite,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppColor.white.withOpacity(0),
-                  AppColor.white,
-                  AppColor.white.withOpacity(0),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-            ),
+          const LineGradient(
+            color: AppColor.white,
           ),
           Expanded(
             child: SizedBox(
