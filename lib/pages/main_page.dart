@@ -35,6 +35,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: _pages[_selectedIndex],
       floatingActionButton: FloatingActionButton(
         shape: const CircleBorder(),
@@ -71,7 +72,7 @@ class _MainPageState extends State<MainPage> {
               ),
               onPressed: () => _onItemTapped(1),
             ),
-            const SizedBox(width: 48), // Beri ruang untuk FA4B
+            const SizedBox(width: 48),
             IconButton(
               icon: Icon(
                 Icons.notifications,
