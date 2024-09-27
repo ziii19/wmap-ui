@@ -17,4 +17,6 @@ class AssetsSvg {
   static const String arrowBack = '$_path/arrow-back.svg';
   static const String discount = '$_path/discount.svg';
   static const String today = '$_path/today.svg';
+  static const String coffe = '$_path/coffe.svg';
+  static const String help = '$_path/help.svg';
 }
