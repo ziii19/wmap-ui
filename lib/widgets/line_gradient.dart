@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 class LineGradient extends StatelessWidget {
   final Color color;
+  final double? width;
   const LineGradient({
     super.key,
     required this.color,
+    this.width = .5,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 13),
-      width: .5,
+      width: width,
       height: double.maxFinite,
       decoration: BoxDecoration(
         gradient: LinearGradient(
