@@ -64,8 +64,8 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
             LayoutBuilder(
               builder: (context, constraints) {
-                double itemWidth = constraints.maxWidth / 4; // 4 item per baris
-                double itemHeight = 116; // Tentukan tinggi item yang diinginkan
+                double itemWidth = constraints.maxWidth / 4;
+                double itemHeight = 116;
                 double childAspectRatio = itemWidth / itemHeight;
 
                 return GridView.count(
@@ -73,7 +73,6 @@ class HomePage extends StatelessWidget {
                   shrinkWrap: true,
                   crossAxisCount: 4,
                   crossAxisSpacing: 16,
-                  // mainAxisSpacing: 16,
                   childAspectRatio: childAspectRatio,
                   children: [
                     _buildPaymentItem(
