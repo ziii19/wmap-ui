@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wpay/utils/theme/app_theme.dart';
 import 'pages/main_page.dart';
 
 void main() {
@@ -11,6 +12,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.themeLight(),
       home: const MainPage(),
     );
   }
