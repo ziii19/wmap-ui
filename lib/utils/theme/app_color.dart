@@ -7,8 +7,11 @@ class AppColor {
   static const Color black = Color(0xFF030319);
   static const Color white = Color(0xFFFFFFFF);
   static const Color white1 = Color(0xFFF6FAFD);
+  static const Color white2 = Color(0xFFE0E0E0);
+  static const Color white3 = Color(0xFFF3F3F3);
   static const Color green = Color(0xFF4CD080);
   static const Color green9 = Color(0xFF00373E);
   static const Color gray = Color(0xFF8F92A1);
   static const Color muted = Color(0xFFBDBDBD);
+  static const Color transparent = Color(0x00000000);
 }
