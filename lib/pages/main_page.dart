@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:wpay/pages/home/home_page.dart';
+import 'package:wpay/pages/notification/notification_page.dart';
+import 'package:wpay/pages/qr/qr_scan_page.dart';
+import 'package:wpay/pages/statistic/statisctic_page.dart';
 import 'package:wpay/utils/theme/app_color.dart';
+
+import 'statistic/static_page_1.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -12,18 +18,10 @@ class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    const Center(
-      child: Text('Home'),
-    ),
-    const Center(
-      child: Text('Statistics'),
-    ),
-    const Center(
-      child: Text('Notifications'),
-    ),
-    const Center(
-      child: Text('Profile'),
-    ),
+    const HomePage(),
+    const StatisticPage(),
+    const NotificationPage(),
+    const StatisticPage1()
   ];
 
   void _onItemTapped(int index) {
@@ -39,7 +37,12 @@ class _MainPageState extends State<MainPage> {
       body: _pages[_selectedIndex],
       floatingActionButton: FloatingActionButton(
         shape: const CircleBorder(),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            QrScanPage.route(),
+          );
+        },
         backgroundColor: AppColor.secondary,
         child: const Icon(
           Icons.crop_free,
