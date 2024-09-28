@@ -28,7 +28,9 @@ class StatisticPage1 extends StatelessWidget {
                 CustomAppBar(
                   leading: IconWrap(icon: AssetsSvg.arrowBack),
                   title: 'Statistic',
-                  actions: IconWrap(icon: AssetsSvg.setting),
+                  actions: [
+                    IconWrap(icon: AssetsSvg.setting),
+                  ],
                 ),
                 SizedBox(height: 24),
                 _StatisticInfo1(),

@@ -32,10 +32,12 @@ class NotificationPage extends StatelessWidget {
               ),
               title: 'Notification',
               titleColor: AppColor.white,
-              actions: IconWrap(
-                icon: AssetsSvg.setting,
-                color: AppColor.white,
-              ),
+              actions: [
+                IconWrap(
+                  icon: AssetsSvg.setting,
+                  color: AppColor.white,
+                ),
+              ],
             ),
           ),
           ListView(
@@ -156,4 +158,3 @@ class NotificationPage extends StatelessWidget {
     );
   }
 }
-

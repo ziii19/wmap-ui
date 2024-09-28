@@ -25,10 +25,12 @@ class HomePage extends StatelessWidget {
                 AssetsSvg.logo,
                 height: 38,
               ),
-              actions: const IconWrap(
-                icon: AssetsSvg.setting,
-                color: AppColor.black,
-              ),
+              actions: const [
+                IconWrap(
+                  icon: AssetsSvg.setting,
+                  color: AppColor.black,
+                )
+              ],
             ),
             const SizedBox(height: 24),
             Row(
