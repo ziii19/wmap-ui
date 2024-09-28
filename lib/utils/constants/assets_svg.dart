@@ -19,4 +19,6 @@ class AssetsSvg {
   static const String today = '$_path/today.svg';
   static const String coffe = '$_path/coffe.svg';
   static const String help = '$_path/help.svg';
+  static const String scanner = '$_path/scanner.svg';
+  static const String flash = '$_path/flash.svg';
 }
