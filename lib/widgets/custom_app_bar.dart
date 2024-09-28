@@ -6,7 +6,8 @@ class CustomAppBar extends StatelessWidget {
   final Widget leading;
   final String? title;
   final Color titleColor;
-  final Widget actions;
+  final List<Widget> actions;
+  final EdgeInsetsGeometry? textPadding;
 
   const CustomAppBar({
     super.key,
@@ -14,6 +15,7 @@ class CustomAppBar extends StatelessWidget {
     this.title,
     this.titleColor = AppColor.black,
     required this.actions,
+    this.textPadding = const EdgeInsets.all(0),
   });
 
   @override
@@ -25,16 +27,21 @@ class CustomAppBar extends StatelessWidget {
         children: [
           leading,
           if (title != null) ...[
-            Text(
-              title!,
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 20,
-                color: titleColor,
+            Padding(
+              padding: textPadding!,
+              child: Text(
+                title!,
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20,
+                  color: titleColor,
+                ),
               ),
             ),
           ],
-          actions,
+          Row(
+            children: actions,
+          ),
         ],
       ),
     );
